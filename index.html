@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Prashant</title>
+</head>
+
+<div id="app"></div>
+<div id="count"></div>
+
+    <button onclick="add()">+</button>
+    
+    <button onclick="sub()">-</button>
+
+<script>
+    
+    var int=0;
+
+
+    function add(){
+    
+        int = int + 1 ;
+
+        localStorage.setItem("count",{"id" : "text"});
+
+        document.getElementById('count').innerHTML = int;
+
+    }
+
+    function sub(){
+        int = int-1;
+        document.getElementById('count').innerHTML = int;
+    }
+
+        
+
+       
+    
+
+</script>
+
+<script>
+
+    // localStorage.setItem("key","value");
+
+    localStorage.setItem("name","Kashyap");
+
+    const name = localStorage.getItem("name");
+
+    document.getElementById('app').innerHTML = name;
+ 
+
+</script>
+ 
+</body>
+</html>
